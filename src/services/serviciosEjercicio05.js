@@ -1,5 +1,5 @@
 export const calcularPorcentaje = (preguntas, correctas) => {
-    return (preguntas / correctas) * 100;
+    return (correctas / preguntas) * 100;
 }
 
 export const mostrarRendimiento = (porcentaje, resultado) => {
