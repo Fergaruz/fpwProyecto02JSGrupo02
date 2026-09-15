@@ -1,6 +1,6 @@
 //Importación de la función
  
-import { calcularAreaTriangulo } from "../services/serviciosTriangulo.js";
+import { calcularAreaTriangulo, sonValoresValidos } from "../services/serviciosTriangulo.js";
  
 //Inicialización de variables
  
@@ -9,4 +9,8 @@ let altura = prompt("Ingresá la altura del triángulo");
  
 //Llamado de la función
  
-calcularAreaTriangulo(base, altura);
+if (sonValoresValidos(base, altura)) {
+    calcularAreaTriangulo(base, altura);
+} else {
+    alert("Debés ingresar valores numéricos positivos para la base y la altura.");
+}
