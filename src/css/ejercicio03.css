@@ -1,5 +1,6 @@
 body {
     margin: 0;
+
     min-height: 100vh;
 
     display: flex;
@@ -8,17 +9,25 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #eff6ff
+    );
 }
+
 
 .contenedor {
     text-align: center;
 }
 
+
 h1 {
     color: #1e3a8a;
-    margin-bottom: 20px;
+
+    margin-bottom: 25px;
 }
+
 
 .tarjeta {
     width: 360px;
@@ -32,39 +41,45 @@ h1 {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
+
 .bandera {
     font-size: 90px;
+
     margin-bottom: 10px;
 }
+
 
 .tarjeta h2 {
     color: #1f2937;
 
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
+
 
 .tarjeta p {
     font-size: 18px;
 
     color: #374151;
 
-    margin: 12px 0;
+    margin: 15px 0;
 }
+
 
 .tarjeta strong {
     color: #111827;
 }
 
-.comparacion {
-    margin-top: 20px;
 
-    padding: 12px;
+.comparacion {
+    margin-top: 25px !important;
+
+    padding: 15px;
 
     border-radius: 10px;
 
     background-color: #dbeafe;
 
-    color: #0e3fc5;
+    color: #1e3a8a !important;
 
     font-weight: bold;
 }
