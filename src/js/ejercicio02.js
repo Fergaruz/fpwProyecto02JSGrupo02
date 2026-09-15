@@ -1,6 +1,6 @@
 //Importación de la función
  
-import { calcularAreaTriangulo, sonValoresValidos } from "../services/serviciosTriangulo.js";
+import { calcularAreaTriangulo, sonValoresValidos } from "../services/serviciosEjercicio02.js";
  
 //Inicialización de variables
  
