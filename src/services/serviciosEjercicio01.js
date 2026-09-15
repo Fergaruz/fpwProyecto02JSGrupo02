@@ -3,7 +3,9 @@
 export const comparacion = (a,b) => {
     if (a > b) {
         alert(`El orden de las letras en el abecedario es "${b}${a}"`)
-    }else{
+    }else if(a < b) {
         alert(`El orden de las letras en el abecedario es "${a}${b}"`)
+    }else {
+        alert(`La letras "${a}" y "${b}" son iguales`)
     };
 }
