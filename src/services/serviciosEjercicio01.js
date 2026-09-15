@@ -6,6 +6,6 @@ export const comparacion = (a,b) => {
     }else if(a < b) {
         alert(`El orden de las letras en el abecedario es "${a}${b}"`)
     }else {
-        alert(`La letras "${a}" y "${b}" son iguales`)
+        alert(`La letras ingresadas son iguales`)
     };
 }
