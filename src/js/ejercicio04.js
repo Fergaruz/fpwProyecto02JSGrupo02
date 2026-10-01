@@ -38,4 +38,4 @@ function calculo(cadenaIntroducida){
 
 let resultado = calculo(cadenaIntroducida);
 
-console.log(resultado);
+alert(resultado);
