@@ -1,47 +1,31 @@
+// Importación de funciones
+import {
+    concatenarLugar,
+    contarCaracteres,
+    compararLongitud,
+    obtenerBandera
+} from "../services/serviciosEjercicio03.js";
+
+
+// Ingreso de datos
 const ciudad = prompt("Ingrese el nombre de una ciudad:");
+
 const pais = prompt("Ingrese el nombre de un país:");
 
-const lugarCompleto = ciudad + ", " + pais;
 
-// Banderas
-const banderas = {
-    argentina: "🇦🇷",
-    chile: "🇨🇱",
-    bolivia: "🇧🇴",
-    peru: "🇵🇪",
-    brasil: "🇧🇷",
-    uruguay: "🇺🇾",
-    paraguay: "🇵🇾",
-    colombia: "🇨🇴",
-    mexico: "🇲🇽",
-    españa: "🇪🇸",
-    francia: "🇫🇷",
-    italia: "🇮🇹",
-    japon: "🇯🇵",
-    corea: "🇰🇷",
-    estadosunidos: "🇺🇸"
-};
-const paisBuscado = pais
-    .toLowerCase()
-    .trim()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+// Uso de las funciones
+const lugarCompleto = concatenarLugar(ciudad, pais);
 
-const bandera = banderas[paisBuscado] || "🌎";
-// Buscar la bandera
+const cantidadCiudad = contarCaracteres(ciudad);
+
+const cantidadPais = contarCaracteres(pais);
+
+const comparacion = compararLongitud(ciudad, pais);
+
+const bandera = obtenerBandera(pais);
 
 
-
-// Comparar longitudes
-const comparacion =
-    ciudad.length > pais.length
-        ? "La ciudad tiene más caracteres que el país."
-        : pais.length > ciudad.length
-        ? "El país tiene más caracteres que la ciudad."
-        : "La ciudad y el país tienen la misma cantidad de caracteres.";
-
-
-// Mostrar resultado
+// Mostrar resultado en la página
 document.getElementById("resultado").innerHTML = `
 
     <div class="tarjeta">
@@ -54,12 +38,12 @@ document.getElementById("resultado").innerHTML = `
 
         <p>
             🏙️ Caracteres de la ciudad:
-            <strong>${ciudad.length}</strong>
+            <strong>${cantidadCiudad}</strong>
         </p>
 
         <p>
             🌎 Caracteres del país:
-            <strong>${pais.length}</strong>
+            <strong>${cantidadPais}</strong>
         </p>
 
         <p class="comparacion">
